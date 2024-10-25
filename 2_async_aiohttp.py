@@ -21,6 +21,7 @@ def main() -> None:
 
 async def download_pokemon_list() -> list[tuple[int, str]]:
     """Download a list of Pokémon from 'pokemondb.net'."""
+    
     print("Creating coroutine objects...", flush=True)
     coroutines = [download_single_pokemon(num) for num in range(1, 21)]
     print("Gathering coroutines into tasks...", flush=True)

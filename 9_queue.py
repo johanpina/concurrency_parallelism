@@ -14,8 +14,9 @@ def worker():
 
 # Iniciar el hilo del trabajador.
 threading.Thread(target=worker, daemon=True).start()
+# -------------------------------------------------------------
 
-# Enviar treinta solicitudes de tareas al trabajador con un retardo de 1 segundo entre cada envío.
+# Enviar veinte solicitudes de tareas al trabajador con un retardo de 1 segundo entre cada envío.
 for item in range(20):
     q.put(item)
     print(f"put item {item} in queue!")

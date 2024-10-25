@@ -36,3 +36,12 @@ e.g.
 ```bash
 uvicorn main:app --reload
 ```
+
+brew install rabbitmq
+brew services start rabbitmq
+rabbitmq-plugins enable rabbitmq_mqtt
+pip install -r requirements.txt
+
+rabbitmq-plugins enable rabbitmq_management
+
+http://localhost:15672/
