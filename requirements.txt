@@ -4,8 +4,8 @@ requests #(for making sync-only HTTP requests)
 httpx #(for making sync or async HTTP requests)
 aiohttp #(for making async-only HTTP requests)
 
-confluent-kafka
-paho-mqtt
+#confluent-kafka
+#paho-mqtt
 
 
 fastapi[all] #(for building APIs)
