@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Descarga</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Simulador de Descarga de Archivos</h1>
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Modo Síncrono</h5>
+                        <p class="card-text">La interfaz se bloqueará hasta que todas las descargas terminen. Los archivos se descargan uno por uno.</p>
+                        <button id="sync-btn" class="btn btn-primary">Descarga Síncrona</button>
+                        <div id="sync-progress" class="mt-3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Modo Asíncrono</h5>
+                        <p class="card-text">La interfaz permanecerá receptiva. Los archivos se descargan de forma concurrente.</p>
+                        <button id="async-btn" class="btn btn-success">Descarga Asíncrona</button>
+                        <div id="async-progress" class="mt-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
+
